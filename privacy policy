@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - RetiGuard AI</title>
+  <style>
+    :root {
+      --bg: #091217;
+      --card: #0f1c24;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #00e5b7;
+      --border: #1e293b;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8fafc;
+        --card: #ffffff;
+        --text: #0f172a;
+        --muted: #64748b;
+        --accent: #0d9488;
+        --border: #e2e8f0;
+      }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background-color: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 30px;
+    }
+    .brand {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 32px;
+      margin: 0 0 12px 0;
+      letter-spacing: -0.5px;
+    }
+    .meta {
+      font-size: 14px;
+      color: var(--muted);
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: var(--accent);
+    }
+    h3 {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+    p, li {
+      font-size: 15px;
+      color: var(--text);
+    }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+    th, td {
+      text-align: left;
+      padding: 12px;
+      border: 1px solid var(--border);
+    }
+    th {
+      background-color: rgba(0, 229, 183, 0.08);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .callout {
+      background-color: rgba(0, 229, 183, 0.05);
+      border-left: 4px solid var(--accent);
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 24px 0;
+    }
+    .callout p {
+      margin: 0;
+      font-size: 14px;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="brand">Health & Medical Privacy Policy</span>
+      <h1>Privacy Policy for RetiGuard AI</h1>
+      <div class="meta">
+        <strong>Last Updated:</strong> November 18, 2026 &bull; 
+        <strong>Effective Date:</strong> November 18, 2026
+      </div>
+    </div>
+
+    <h2>1. Overview</h2>
+    <p><strong>RetiGuard AI</strong> ("the App", "we", "our") is an intelligent clinical decision-support application built for retinal screening and diabetic retinopathy triage. We are dedicated to protecting your privacy and treating health data with absolute security and confidentiality.</p>
+
+    <h2>2. Information We Process</h2>
+    
+    <h3>A. Camera & Photographic Data</h3>
+    <ul>
+      <li><strong>Camera Feed:</strong> When performing a retinal examination, the App requests camera access (<code>android.permission.CAMERA</code>) solely to stream live video for optical alignment, quality checking, and retinal image capture.</li>
+      <li><strong>On-Device Processing:</strong> Retinal examination and neural network inferences occur on-device. Retinal photographs are saved within the private, encrypted application sandbox on your device and are never shared or sold to advertising networks.</li>
+    </ul>
+
+    <h3>B. Health & Screening Vitals (Optional)</h3>
+    <p>Users may enter clinical markers (such as HbA1c, blood glucose readings, or blood pressure) to populate standardized clinical referral PDF reports. This information remains in local device storage unless you explicitly synchronize it with an authorized clinical backend.</p>
+
+    <h3>C. Audio / Voice Guidance</h3>
+    <p>The App requests microphone access (<code>android.permission.RECORD_AUDIO</code>) strictly to enable accessibility voice guidance and hands-free input. Voice audio is processed transiently and is never recorded, stored, or transmitted.</p>
+
+    <h3>D. Location (Optional)</h3>
+    <p>When searching for nearby ophthalmology clinics or eye specialists, the App may request approximate location to query public directories (e.g. OpenStreetMap). Location is never monitored in the background or logged on external servers.</p>
+
+    <h2>3. Permissions Requested & Clinical Purpose</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Permission</th>
+          <th>Type</th>
+          <th>Clinical / Technical Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>CAMERA</code></td>
+          <td>Dangerous / Runtime</td>
+          <td>Live fundus eye alignment and real-time optical capture.</td>
+        </tr>
+        <tr>
+          <td><code>RECORD_AUDIO</code></td>
+          <td>Dangerous / Runtime</td>
+          <td>Voice-assisted interactive guidance and accessibility.</td>
+        </tr>
+        <tr>
+          <td><code>READ_MEDIA_IMAGES</code></td>
+          <td>Runtime</td>
+          <td>Selecting pre-existing fundus photos from the device gallery.</td>
+        </tr>
+        <tr>
+          <td><code>INTERNET</code></td>
+          <td>Normal</td>
+          <td>Accessing open map directories to locate nearby eye hospitals.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. Data Storage, Security & User Control</h2>
+    <ul>
+      <li><strong>Local Sandbox:</strong> All patient data, retinal images, and screening histories are isolated within secure application sandbox storage.</li>
+      <li><strong>Security Center PIN Lock:</strong> The App features a PIN security gate to prevent unauthorized viewing on shared mobile devices.</li>
+      <li><strong>Data Deletion:</strong> You have full control over your data. You can delete individual scans or execute a complete "Wipe All Data" action at any time in the Security Settings.</li>
+    </ul>
+
+    <div class="callout">
+      <p><strong>Clinical Disclaimer:</strong> RetiGuard AI is designed as a screening aid and decision-support assistant for healthcare professionals and clinical workflows. It is not an automated diagnostic device and does not substitute for evaluation by a certified ophthalmologist or medical professional.</p>
+    </div>
+
+    <h2>5. Contact Information</h2>
+    <p>If you have questions, feedback, or data requests regarding this Privacy Policy, please contact our privacy compliance team:</p>
+    <ul>
+      <li><strong>Email:</strong> privacy@retiguard.ai</li>
+      <li><strong>Developer:</strong> RetiGuard AI Team</li>
+    </ul>
+
+    <div class="footer">
+      &copy; 2026 RetiGuard AI. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
